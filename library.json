@@ -20,24 +20,28 @@
   "platforms": "espressif32",
   "dependencies": [
     {
-      "name": "external-zip",
-      "version": "https://github.com/alanswx/ESPAsyncWiFiManager/archive/master.zip"
+      "owner": "alanswx",
+      "name": "ESPAsyncWiFiManager",
+      "version": "^0.23"
     },
     {
       "name": "external-zip",
       "version": "https://github.com/zhouhan0126/WebServer-esp32/archive/master.zip"
     },
     {
-      "name": "external-zip",
-      "version": "https://github.com/zhouhan0126/DNSServer---esp32/archive/master.zip"
+      "owner": "bbx10",
+      "name": "DNSServer",
+      "version": "^1.1.0"
     },
     {
-      "name": "external-zip",
-      "version": "https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip"
+      "owner": "me-no-dev",
+      "name": "ESP Async WebServer",
+      "version": "^1.2.3"
     },
     {
-      "name": "external-zip",
-      "version": "https://github.com/me-no-dev/AsyncTCP/archive/master.zip"
+      "owner": "me-no-dev",
+      "name": "AsyncTCP",
+      "version": "^1.1.1"
     },
     {
       "owner": "links2004",
