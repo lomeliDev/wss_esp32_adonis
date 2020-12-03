@@ -91,6 +91,11 @@ void setupWss(void)
 		logS("WSS Channel : " + String(channel));
 		webSocket.begin(hostGlobal, String(port).toInt(), path);
 		webSocket.onEvent(webSocketEvent);
+
+		if(String(wss_user) != "" && String(wss_pass) != ""){
+			webSocket.setAuthorization(wss_user, wss_pass);
+		}
+		
 		webSocket.setReconnectInterval(3000);
 		wifiReady = 2;
 	}
