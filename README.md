@@ -20,6 +20,9 @@ lib_deps =
 
 La libreria cuenta con 3 modelos de conexion, conexion wifi manual, otra con wifimanager usando spifs para guardar los datos, en la version de wifimanager podemos reiniciar el dispositivo  con sus conexiones que guardo wifimanager.
 
+## Auth WSS
+Si requerimos autentificacion debemos mandar los campos wss_user y wss_pass , si no lo requerimos mandarlos vacio, tanto en conexion manual y con wifimanager
+
 Conexion Manual:
 
 ```
@@ -48,6 +51,23 @@ void loop()
       dataReceived = "";
     }
   }
+}
+```
+
+## SPIFS WIFIMANAGER
+Si utilizas la version de wifimanager es necesario subir al filesystem de spifs un archivo el cual debe llamarse `wss.json`
+
+```
+{
+    "ssid": "",
+    "pass": "",
+    "token": "",
+    "host": "",
+    "port": "",
+    "path": "",
+    "channel": "",
+    "wss_user": "",
+    "wss_pass": ""    
 }
 ```
 
